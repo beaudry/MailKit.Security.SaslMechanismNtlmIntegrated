@@ -4,4 +4,8 @@ This is a package that contains the code given by [UriHendler](https://github.co
 With this mechanism, you achieve a similar result as if you were to use the `UseDefaultCredentials()` of the .Net SmtpClient.
 
 ## How to use
-`smtpClient.Authenticate(new SaslMechanismNtlmIntegrated());`
+```
+using MailKit.Security;
+
+smtpClient.Authenticate(new SaslMechanismNtlmIntegrated());
+```
