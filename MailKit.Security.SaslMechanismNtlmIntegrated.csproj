@@ -5,8 +5,9 @@
     <Version>0.1.0</Version>
     <Authors>Charles-André Beaudry</Authors>
     <Company>Cofomo</Company>
-    <Product />
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/beaudry/MailKit.Security.SaslMechanismNtlmIntegrated</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
