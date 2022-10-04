@@ -7,5 +7,8 @@ With this mechanism, you achieve a similar result as if you were to use the `Use
 ```
 using MailKit.Security;
 
-smtpClient.Authenticate(new SaslMechanismNtlmIntegrated());
+var mechanism = new SaslMechanismNtlmIntegrated();
+smtpClient.Authenticate(mechanism);
+
+string authenticatedUserName = mechanism.AuthenticatedUserName;
 ```

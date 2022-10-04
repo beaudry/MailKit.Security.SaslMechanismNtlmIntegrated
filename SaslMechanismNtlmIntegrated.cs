@@ -42,9 +42,9 @@ namespace MailKit.Security
         public override bool SupportsInitialResponse => true;
        
         /// <summary>
-        /// The authenticated username.
+        /// The authenticated user name.
         /// </summary>
-        public virtual string ContextUserName => sspiContext.ContextUserName;
+        public virtual string AuthenticatedUserName => sspiContext.ContextUserName;
 
         /// <inheritdoc cref="SaslMechanism.Challenge(byte[], int, int, CancellationToken)"/>
         /// <exception cref="InvalidOperationException">
