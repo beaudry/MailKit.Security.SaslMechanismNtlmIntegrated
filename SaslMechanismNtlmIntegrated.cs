@@ -1,4 +1,4 @@
-﻿using NSspi;
+using NSspi;
 using NSspi.Contexts;
 using NSspi.Credentials;
 using System;
