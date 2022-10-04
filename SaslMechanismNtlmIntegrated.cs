@@ -35,7 +35,10 @@ namespace MailKit.Security
         {
         }
 
+        /// <inheritdoc cref="SaslMechanism.MechanismName"/>
         public override string MechanismName => "NTLM";
+
+        /// <inheritdoc cref="SaslMechanism.SupportsInitialResponse"/>
         public override bool SupportsInitialResponse => true;
        
         /// <summary>
@@ -92,6 +95,7 @@ namespace MailKit.Security
                 | ContextAttrib.Confidentiality);
         }
 
+        /// <inheritdoc cref="SaslMechanism.Reset"/>
         public override void Reset()
         {
             state = LoginState.Initial;
