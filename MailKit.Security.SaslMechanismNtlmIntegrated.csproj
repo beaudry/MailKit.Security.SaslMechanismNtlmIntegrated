@@ -2,12 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <Authors>Charles-André Beaudry</Authors>
     <Company>Cofomo</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/beaudry/MailKit.Security.SaslMechanismNtlmIntegrated</RepositoryUrl>
-    <PackageTags>NTLM, SMTP, UseDefaultCredentials, SmtpClient, MailKit, DefaultNetworkCredentials, CredentialCache</PackageTags>
+    <PackageTags>NTLM, SMTP, UseDefaultCredentials, SmtpClient, MailKit, DefaultNetworkCredentials, CredentialCache, Credentials</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>obj/Release/netstandard2.0/MailKit.Security.SaslMechanismNtlmIntegrated.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
